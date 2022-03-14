@@ -3,15 +3,14 @@ output: .retype
 url: retype.com
 
 branding:
-  logo: /static/retype-logo.svg
-  logoDark: /static/retype-logo-dark.svg
-  label: v2.0
+  logo: /static/3DPrintable_Logo_BlackType.svg
+  logoDark: /static/3DPrintable_Logo_WhiteType.svg
 
 meta:
-  title: " - Generate, publish, and share documentation"
+  title: " - Documentation"
 
 edit:
-  repo: github.com/retypeapp/retype
+  repo: github.com/3DPrintable
 
 links:
   - text: Home
@@ -29,7 +28,7 @@ links:
     target: blank
 
   - text: GitHub
-    link: https://github.com/retypeapp/retype
+    link: https://github.com/3DPrintable
     icon: mark-github
     target: blank
 
