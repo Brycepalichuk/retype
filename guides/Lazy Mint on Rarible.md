@@ -5,33 +5,18 @@ tags: [guide]
 ---
 # Lazy Mint on Rarible
 
-Getting started with Retype is super quick and you can be up and running within seconds.
+Getting started with Lazy Mint on Rarible. This tool allows a creator to upload a 3d printer file and list the NFT for sale on Rarible. The reason it is called "Lazy Mint" is that the NFT token is only minted when a buyer purchases the NFT. This is beneficial for the creator because it is free to list the NFT on the marketplace and the gas fee for minting is passed onto the buyer.  
 
-Check out the [Quick start](../README.md#quick-start) for the condensed process or continue here with the detailed instructions.
-
-!!!
-
-Please see the [Retype CLI](cli.md) for full details on each command.
-
-!!!
 
 ---
 
 ## Prerequisites
 
-Retype is installed using either [`npm`](https://www.npmjs.com/get-npm), [`yarn`](https://classic.yarnpkg.com/en/docs/install/), or the [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) CLI.
-
-You only need one of those three package managers as a prerequisite, although all three could be installed on your computer too. It's up to you. :raised_hands:
-
-| Package Manager | Supported Platforms |
-| --- | --- |
-| [`npm`](https://www.npmjs.com/get-npm) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
-| [`yarn`](https://classic.yarnpkg.com/en/docs/install/) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
-| [`dotnet`](https://dotnet.microsoft.com/download/dotnet-core) | [!badge text="Mac" variant="light"] [!badge text="Win" variant="primary"] [!badge text="Linux" variant="warning"]
+To connect to the Ethereum blockchain and web3, a crypto wallet is required. A popular wallet is Metamask. Click the following [link](https://metamask.io/) to get a Metamask wallet and download the browser extension!
 
 ---
 
-## Install
+## Step 1
 
 It takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
 
