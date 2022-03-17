@@ -10,7 +10,7 @@ meta:
   title: " - Documentation"
 
 edit:
-  repo: github.com/3DPrintable
+  repo: https://github.com/3DPrintable/3DPrintable-App
 
 links:
   - text: Home

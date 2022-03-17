@@ -1,11 +1,10 @@
 ---
 order: 100
 icon: rocket
-tags: [guide]
 ---
 # Lazy Mint on Rarible
 
-Getting started with Lazy Mint on Rarible. This tool allows a creator to upload a 3d printer file and list the NFT for sale on Rarible. The reason it is called "Lazy Mint" is that the NFT token is only minted when a buyer purchases the NFT. This is beneficial for the creator because it is free to list the NFT on the marketplace and the gas fee for minting is passed onto the buyer.  
+This tool allows a creator to upload a 3d printer file and list the NFT for sale on Rarible. The reason it is called "Lazy Mint" is that the NFT token is only minted when a buyer purchases the NFT. This is beneficial for the creator because it is free to list the NFT on the marketplace and the gas fee for minting is passed onto the buyer.  
 
 
 ---
@@ -16,90 +15,66 @@ To connect to the Ethereum blockchain and web3, a crypto wallet is required. A p
 
 ---
 
-## Step 1
+## Step 1 - Authenticate Wallet
 
-It takes just a few seconds to install Retype using any of the following commands. Choose the command based on a package manager you have installed on your computer.
+After installing a crypto wallet, click on the Authenticate button on the top right of the page. Make sure you are on the Ethereum network.
+![](../static/LazyMintImages/AuthenticateButton.png)
 
-+++ npm
-```
-npm install retypeapp --global
-retype watch
-```
-+++ yarn
-```
-yarn global add retypeapp
-retype watch
-```
-+++ dotnet
-```
-dotnet tool install retypeapp --global
-retype watch
-```
-+++
+After you click the Authenticate button, a pop-up window will appear from your crypto wallet asking you to sign the authentication transaction.
+![](../static/LazyMintImages/SignatureRequest.png)
 
-That's it! :tada: Your new Retype website should be up and running. :tada:
+You will then see your wallet address display where the Authenticate button was and it will display your native blockchain balance for that blockchain in your wallet.
+![](../static/LazyMintImages/Authenticated.png)
 
-!!!
+## Step 2 - Fill in Form Details
 
-If you already have the `dotnet` CLI installed on your machine, installing using `dotnet tool install retypeapp --global` will be the fastest option, but any of the options should install within seconds. They all produce the same result and run with the same performance. The `dotnet` package size is the smallest.
+You will need to have your 3d printer file (STL is only supported right now) and image file (jpg/png) saved on your local computer before proceeding. 
 
-!!!
+Once you have the 3d printer file and image of the file ready, click on the "Upload Image" and "Upload STL File" buttons.
+![](../static/LazyMintImages/UploadForms.png)
 
-### Platform specific
+After choosing the appropriate files for the image and 3d printer file, the form fields will show the name of the selected files
 
-The default `retypapp` NPM and Yarn package is a bundle of several platform specific packages. The installer will automatically detect and choose the correct platform package from the bundle during installation.
+![](../static/LazyMintImages/UploadFormsFileSelected.png)
 
-The bundle provides convenience although at the cost of an increased download size.
+and a preview of the image will appear to the right.
 
-It is possible to install smaller platform specific packages without the bundling. Currently, four platforms are supported and can be installed separately.
+![](../static/LazyMintImages/Preview.png)
 
-Platform | Install command
---- | ---
-[`retypeapp-win-x86`](https://www.npmjs.com/package/retypeapp-win-x86) | `npm install retypeapp-win-x86`
-[`retypeapp-win-x64`](https://www.npmjs.com/package/retypeapp-win-x64) | `npm install retypeapp-win-x64`
-[`retypeapp-linux-x64`](https://www.npmjs.com/package/retypeapp-linux-x64) | `npm install retypeapp-linux-x64`
-[`retypeapp-darwin-x64`](https://www.npmjs.com/package/retypeapp-darwin-x64) | `npm install retypeapp-darwin-x64`
+After uploading the image and 3d printer file, fill in the rest of the form fields.
 
----
+Name = Name of the 3d printer file
 
-## Update
+Supply = Number of NFTs to create per 3d printer file
 
-Update to the latest release of Retype using on of the following commands for the package manager that you initially installed Retype with. For instance, if you used `npm` to install Retype, run the `npm` update command to update Retype locally.
+Category = The category the 3d printer file associates with
 
-+++ npm
-```
-npm update retypeapp --global
-```
-+++ yarn
-```
-yarn global upgrade retypeapp
-```
-+++ dotnet
-```
-dotnet tool update retypeapp --global
-```
-+++
+Creator = Your name or pseudonym 
 
----
+Royalty = Percentage of every sale that you will collect after the first buy
 
-## Uninstall
+Description (Optional) = Small description of the file and anything you think is important
 
-Done with Retype? It's okay, we understand. :cry:
+![](../static/LazyMintImages/FormFields.png)
 
-Uninstalling Retype is just as simple as installing. Use the same package manager to uninstall as you did to install. For instance, if you used `npm` to install Retype, run the `npm` uninstall command to remove.
+## Step 3 - Upload Files to IPFS and list NFT for sale on Rarible
 
-+++ npm
-```
-npm uninstall retypeapp --global
-```
-+++ yarn
-```
-yarn global remove retypeapp
-```
-+++ dotnet
-```
-dotnet tool uninstall retypeapp --global
-```
-+++
+Once you have filled in all of the form fields outlined in step 2, click the "Upload Button"
 
-All Retype related files and folders within your project can be deleted, such as the `retype.yml` file and the generated `.retype` folder.
+![](../static/LazyMintImages/UploadButton.png)
+
+A window alert fill appear after clicking the "Upload Button". This is a confirmation message that you want to proceed with the "Lazy Minting" process. Click the "OK Button" if you want to proceed.
+
+![](../static/LazyMintImages/WindowAlert1.png)
+
+PLEASE WAIT APPROX 15-30 SECONDS AND DON'T RESFRESH YOUR BROWSER. You will then see a pop-out window from your crypto wallet with your token id and metadata. Sign this message to proceed.
+
+![](../static/LazyMintImages/LazyMintSignatureRequest.png)
+
+After you sign the message, PLEASE WAIT APPROX 15-30 SECONDS AND DON'T RESFRESH YOUR BROWSER. You will get another window alert.
+
+![](../static/LazyMintImages/WindowAlert2.png)
+
+Click "OK Button" to proceed and you will be redirect to the Rarible marketplace with your listing. You can then click the "Put on Sale" button and follow the Rarible steps to list your NFT.
+
+![](../static/LazyMintImages/Rarible.png)
