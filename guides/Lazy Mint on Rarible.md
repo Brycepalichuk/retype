@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: rocket
+icon: upload
 ---
 # Lazy Mint on Rarible
 
@@ -20,11 +20,13 @@ To connect to the Ethereum blockchain and web3, a crypto wallet is required. A p
 After installing a crypto wallet, click on the Authenticate button on the top right of the page. Make sure you are on the Ethereum network.
 ![](../static/LazyMintImages/AuthenticateButton.png)
 
+
 After you click the Authenticate button, a pop-up window will appear from your crypto wallet asking you to sign the authentication transaction.
 ![](../static/LazyMintImages/SignatureRequest.png)
 
 You will then see your wallet address display where the Authenticate button was and it will display your native blockchain balance for that blockchain in your wallet.
 ![](../static/LazyMintImages/Authenticated.png)
+
 
 ## Step 2 - Fill in Form Details
 
